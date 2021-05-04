@@ -116,8 +116,8 @@ body .hero .left-content .title .btn-box {
 
 body .hero .left-content .title .btn-box .btn-action {
   border: none;
-  padding: calc(1px + 0.5vw) calc(1px + 1.7vw);
-  font-size: calc(0.8rem + 0.5vw);
+  padding: calc(2px + 0.55vw) calc(6px + 1.75vw);
+  font-size: calc(0.7rem + 0.4vw);
   text-transform: uppercase;
   color: #fff;
   border-radius: 10px;
@@ -280,22 +280,24 @@ body .hero::before {
     flex-wrap: wrap;
   }
   body .hero .social-box {
-    top: 2%;
+    top: 5vh;
     right: 5%;
   }
   body .hero .left-content {
-    min-height: 90vh;
+    min-height: 95vh;
   }
   body .hero .left-content .title {
     text-align: center;
     max-width: 90%;
   }
   body .hero .left-content .title h5 {
-    font-size: calc(0.75rem + 0.3vw);
+    max-width: 32rem;
+    text-align: center;
+    font-size: calc(0.9rem + 0.4vw);
     margin-bottom: 10px;
   }
   body .hero .left-content .title h1 {
-    font-size: calc(6rem + 3vw);
+    font-size: calc(7rem + 3vw);
     text-align: center;
   }
   body .hero .left-content .title h1 span {
@@ -306,11 +308,11 @@ body .hero::before {
     text-align: center;
   }
   body .hero .left-content .title .btn-box .btn-action {
-    padding: calc(9px + 0.5vw) calc(8px + 1.7vw);
-    font-size: calc(0.8rem + 0.5vw);
+    padding: calc(10px + 0.7vw) calc(20px + 2.5vw);
+    font-size: calc(0.9rem + 0.8vw);
   }
   body .hero .right-content {
-    padding-top: 100px;
+    padding-top: 50px;
     height: initial;
   }
   body .hero .right-content .content-box {
