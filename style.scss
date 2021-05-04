@@ -8,7 +8,7 @@
 
 html {
   font-size: 62.5%; // 10px
-  font-family: 'Poppins', sans-serif; // 'Montserrat', 'Roboto';
+  font-family: 'Roboto', sans-serif; // 'Montserrat', 'Roboto', 'Poppins';
 }
 
 body {
@@ -25,6 +25,7 @@ body {
     position: relative;
     min-height: 100vh;
     width: 100vw;
+    overflow: hidden;
 
     background: linear-gradient(
       to right,
@@ -310,7 +311,7 @@ body {
       }
 
       .left-content {
-        min-height: 70vh;
+        min-height: 90vh;
 
         .title {
           text-align: center;
