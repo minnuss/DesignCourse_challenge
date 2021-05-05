@@ -64,6 +64,8 @@ body .hero .left-content {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: heroBtn 2s ease;
+  animation-fill-mode: backwards;
 }
 
 body .hero .left-content .glare {
@@ -168,6 +170,8 @@ body .hero .right-content {
   height: 60vh;
   background-color: #27292c;
   z-index: 0;
+  animation: heroBtn 2s ease;
+  animation-fill-mode: backwards;
 }
 
 body .hero .right-content .content-box {

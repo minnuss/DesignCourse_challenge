@@ -72,6 +72,9 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      animation: heroBtn 2s ease;
+      // animation-delay: 2.2s;
+      animation-fill-mode: backwards;
 
       .glare {
         width: 30%;
@@ -186,6 +189,9 @@ body {
       height: 60vh;
       background-color: rgb(39, 41, 44);
       z-index: 0;
+      animation: heroBtn 2s ease;
+      // animation-delay: 2.2s;
+      animation-fill-mode: backwards;
 
       .content-box {
         display: flex;
