@@ -174,29 +174,23 @@ body .hero .right-content {
   animation-fill-mode: backwards;
 }
 
-body .hero .right-content .content-box {
-  display: flex;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-body .hero .right-content .content-box .story {
+body .hero .right-content .story {
   position: relative;
   overflow: hidden;
 }
 
-body .hero .right-content .content-box .story .img {
+body .hero .right-content .story .img {
   position: relative;
   z-index: 2;
 }
 
-body .hero .right-content .content-box .story .img img {
+body .hero .right-content .story .img img {
   width: 100%;
   position: relative;
   z-index: 2;
 }
 
-body .hero .right-content .content-box .story .glare {
+body .hero .right-content .story .glare {
   width: 30%;
   height: 10%;
   position: absolute;
@@ -208,20 +202,20 @@ body .hero .right-content .content-box .story .glare {
   box-shadow: 0px 0px 75px 75px rgba(87, 118, 233, 0.15), 0px 5px 60px 105px rgba(87, 118, 233, 0.15);
 }
 
-body .hero .right-content .content-box .story .glare2 {
+body .hero .right-content .story .glare2 {
   top: 17vw;
 }
 
-body .hero .right-content .content-box .story .glare3 {
+body .hero .right-content .story .glare3 {
   top: 19vw;
 }
 
-body .hero .right-content .content-box .story .title {
+body .hero .right-content .story .title {
   padding: 10%;
   z-index: 5;
 }
 
-body .hero .right-content .content-box .story .title h5 {
+body .hero .right-content .story .title h5 {
   color: #5776e9;
   font-size: calc(0.8rem + 0.5vw);
   margin-bottom: 10px;
@@ -229,7 +223,7 @@ body .hero .right-content .content-box .story .title h5 {
   z-index: 1;
 }
 
-body .hero .right-content .content-box .story .title h2 {
+body .hero .right-content .story .title h2 {
   font-size: calc(1.5rem + 1vw);
   font-weight: 800;
   line-height: 1;
@@ -239,13 +233,23 @@ body .hero .right-content .content-box .story .title h2 {
   z-index: 1;
 }
 
-body .hero .right-content .content-box .story .title p {
+body .hero .right-content .story .title p {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #b9b9b9;
 }
 
-body .hero .right-content .content-box .story .border-left {
+body .hero .right-content .content-box {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+body .hero .right-content .content-box .story-box {
+  position: relative;
+}
+
+body .hero .right-content .content-box .story-box .border-left {
   width: 2px;
   height: 60vh;
   position: absolute;
@@ -255,7 +259,7 @@ body .hero .right-content .content-box .story .border-left {
   z-index: 5;
 }
 
-body .hero .right-content .content-box .story .border-right {
+body .hero .right-content .content-box .story-box .border-right {
   width: 2px;
   height: 60vh;
   position: absolute;
@@ -265,48 +269,48 @@ body .hero .right-content .content-box .story .border-right {
   z-index: 5;
 }
 
-body .hero .right-content .content-box .story1 {
+body .hero .right-content .content-box .story-box:nth-child(1) {
   transform: translateY(-40px);
   animation: story1 1.2s linear;
   animation-delay: 0.2s;
   animation-fill-mode: backwards;
 }
 
-body .hero .right-content .content-box .story1 .border-left {
+body .hero .right-content .content-box .story-box:nth-child(1) .border-left {
   transform: translateY(-180px);
 }
 
-body .hero .right-content .content-box .story1 .border-right {
+body .hero .right-content .content-box .story-box:nth-child(1) .border-right {
   transform: translateY(-50px);
 }
 
-body .hero .right-content .content-box .story2 {
+body .hero .right-content .content-box .story-box:nth-child(2) {
   transform: translateY(-150px);
   animation: story2 1.2s linear;
   animation-delay: 0.6s;
   animation-fill-mode: backwards;
 }
 
-body .hero .right-content .content-box .story2 .border-left {
+body .hero .right-content .content-box .story-box:nth-child(2) .border-left {
   transform: translateY(100px);
 }
 
-body .hero .right-content .content-box .story2 .border-right {
+body .hero .right-content .content-box .story-box:nth-child(2) .border-right {
   transform: translateY(-100px);
 }
 
-body .hero .right-content .content-box .story3 {
+body .hero .right-content .content-box .story-box:nth-child(3) {
   transform: translateY(20px);
   animation: story3 1.2s linear;
   animation-delay: 0.85s;
   animation-fill-mode: backwards;
 }
 
-body .hero .right-content .content-box .story3 .border-left {
+body .hero .right-content .content-box .story-box:nth-child(3) .border-left {
   transform: translateY(-150px);
 }
 
-body .hero .right-content .content-box .story3 .border-right {
+body .hero .right-content .content-box .story-box:nth-child(3) .border-right {
   transform: translateY(50px);
 }
 
@@ -369,65 +373,70 @@ body .hero::before {
     max-width: 90%;
     flex-wrap: wrap;
   }
-  body .hero .right-content .content-box .story {
+  body .hero .right-content .content-box .story-box {
     width: 50%;
     min-width: 35rem;
     margin: 0 auto 50px;
   }
-  body .hero .right-content .content-box .story .glare1 {
+  body .hero .right-content .content-box .story-box .story {
+    width: 50%;
+    min-width: 35rem;
+    margin: 0 auto 50px;
+  }
+  body .hero .right-content .content-box .story-box .story .glare1 {
     top: 60%;
   }
-  body .hero .right-content .content-box .story .glare2 {
+  body .hero .right-content .content-box .story-box .story .glare2 {
     top: 60%;
   }
-  body .hero .right-content .content-box .story .glare3 {
+  body .hero .right-content .content-box .story-box .story .glare3 {
     top: 60%;
   }
-  body .hero .right-content .content-box .story .title {
+  body .hero .right-content .content-box .story-box .story .title {
     padding: 10%;
     z-index: 5;
   }
-  body .hero .right-content .content-box .story .title h5 {
+  body .hero .right-content .content-box .story-box .story .title h5 {
     color: #5776e9;
     font-size: calc(1.2rem + 0.5vw);
     margin-bottom: 10px;
   }
-  body .hero .right-content .content-box .story .title h2 {
+  body .hero .right-content .content-box .story-box .story .title h2 {
     font-size: calc(2.5rem + 1vw);
     line-height: 1;
     color: #fff;
     margin-bottom: 20px;
   }
-  body .hero .right-content .content-box .story .title p {
+  body .hero .right-content .content-box .story-box .story .title p {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #b9b9b9;
   }
-  body .hero .right-content .content-box .story1 {
+  body .hero .right-content .content-box .story-box:nth-child(1) {
     transform: translateY(0px);
   }
-  body .hero .right-content .content-box .story1 .border-left {
+  body .hero .right-content .content-box .story-box:nth-child(1) .border-left {
+    transform: translateY(-70px);
+  }
+  body .hero .right-content .content-box .story-box:nth-child(1) .border-right {
     transform: translateY(0px);
   }
-  body .hero .right-content .content-box .story1 .border-right {
+  body .hero .right-content .content-box .story-box:nth-child(2) {
     transform: translateY(0px);
   }
-  body .hero .right-content .content-box .story2 {
+  body .hero .right-content .content-box .story-box:nth-child(2) .border-left {
+    transform: translateY(-70px);
+  }
+  body .hero .right-content .content-box .story-box:nth-child(2) .border-right {
     transform: translateY(0px);
   }
-  body .hero .right-content .content-box .story2 .border-left {
+  body .hero .right-content .content-box .story-box:nth-child(3) {
     transform: translateY(0px);
   }
-  body .hero .right-content .content-box .story2 .border-right {
-    transform: translateY(0px);
+  body .hero .right-content .content-box .story-box:nth-child(3) .border-left {
+    transform: translateY(-70px);
   }
-  body .hero .right-content .content-box .story3 {
-    transform: translateY(0px);
-  }
-  body .hero .right-content .content-box .story3 .border-left {
-    transform: translateY(0px);
-  }
-  body .hero .right-content .content-box .story3 .border-right {
+  body .hero .right-content .content-box .story-box:nth-child(3) .border-right {
     transform: translateY(0px);
   }
 }
